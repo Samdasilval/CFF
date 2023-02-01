@@ -6,7 +6,7 @@ const boardContainer = document.querySelector("#board");
 
 const getStations = async (station) => {
     try {
-        const res = await fetch(`http://transport.opendata.ch/v1/stationboard?station=${station}&limit=10`);
+        const res = await fetch(`https://transport.opendata.ch/v1/stationboard?station=${station}&limit=10`);
         const data = await res.json();
         console.log(data);
         afficheNomStation(data);
