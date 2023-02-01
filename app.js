@@ -11,6 +11,7 @@ const getStations = async (station) => {
         console.log(data);
         afficheNomStation(data);
         getAllStationboard(data);
+        boardContainer.insertAdjacentHTML("beforeend", "")
     } catch (e) {
         console.error(e.message);
     }
